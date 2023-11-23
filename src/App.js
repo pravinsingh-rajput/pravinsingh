@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./PortfolioContainer/Home/Home";
+import AboutMe from "./PortfolioContainer/AboutMe/AboutMe";
+import Project from "./PortfolioContainer/Projects/Project";
+import Navbar from "./PortfolioContainer/Header/Header";
+import Certification from "./PortfolioContainer/Certification/Certification";
+import Skills from "./PortfolioContainer/Skills/Skills";
+import Footer from "./PortfolioContainer/Footer/Footer";
 
 function App() {
+  document.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Home />
+      <AboutMe />
+      <Project />
+      <Skills />
+      <Certification />
+      <Footer />
     </div>
   );
 }

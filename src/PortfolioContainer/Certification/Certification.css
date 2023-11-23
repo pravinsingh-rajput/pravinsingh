@@ -1,0 +1,112 @@
+.certification {
+  background-color: #212830;
+  width: 100%;
+  min-height: 600px;
+  height: fit-content;
+  color: #ffffff;
+  padding: 25px;
+  text-align: center;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.certification_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin: 0px 5%;
+  width: 90%;
+}
+
+.certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  cursor: pointer;
+  color: #0ab98b;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(62, 59, 78, 0.7);
+}
+
+.certificateimg {
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.certificateimg:hover {
+  scale: 1.1;
+}
+
+.coursetitle {
+  font-size: 15px;
+  padding: 0px 5px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.coursetitle:hover {
+  color: #fff;
+  text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #fff;
+}
+
+@media screen and (max-width: 1153px) {
+  .certificateimg {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 938px) {
+  .certification_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0px 5%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .certification_container {
+    gap: 20px;
+    margin: 0px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .certification_container {
+    gap: 20px;
+    margin: 0px;
+    width: 100%;
+    padding: 5px;
+  }
+  .certificateimg {
+    height: 190px;
+  }
+  .coursetitle {
+    font-size: 14.5px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .certification_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .certificateimg {
+    height: 220px;
+  }
+  .certification_container {
+    gap: 20px;
+    margin: 0px;
+    width: 95%;
+    padding: 5px;
+  }
+
+  .certification {
+    padding: 12px;
+    padding-bottom: 40px;
+  }
+}
